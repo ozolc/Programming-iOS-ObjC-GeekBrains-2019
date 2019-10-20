@@ -1,4 +1,5 @@
 #import "SceneDelegate.h"
+#import "ViewController.h"
 
 @interface SceneDelegate ()
 
@@ -11,6 +12,12 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+    self.window = window;
+
+    ViewController *viewController = [[ViewController alloc] init];
+    window.rootViewController = viewController;
+    [window makeKeyAndVisible];
 }
 
 
@@ -23,24 +30,28 @@
 
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {
+    // Not called under iOS 12 - See AppDelegate applicationDidBecomeActive
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
 }
 
 
 - (void)sceneWillResignActive:(UIScene *)scene {
+    // Not called under iOS 12 - See AppDelegate applicationWillResignActive
     // Called when the scene will move from an active state to an inactive state.
     // This may occur due to temporary interruptions (ex. an incoming phone call).
 }
 
 
 - (void)sceneWillEnterForeground:(UIScene *)scene {
+    // Not called under iOS 12 - See AppDelegate applicationWillEnterForeground
     // Called as the scene transitions from the background to the foreground.
     // Use this method to undo the changes made on entering the background.
 }
 
 
 - (void)sceneDidEnterBackground:(UIScene *)scene {
+    // Not called under iOS 12 - See AppDelegate applicationDidEnterBackground
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
