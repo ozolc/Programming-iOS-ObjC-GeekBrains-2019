@@ -13,6 +13,9 @@
 		B0550846235F764A00A9BDC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0550845235F764A00A9BDC7 /* Assets.xcassets */; };
 		B0550849235F764A00A9BDC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0550847235F764A00A9BDC7 /* LaunchScreen.storyboard */; };
 		B055084C235F764A00A9BDC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B055084B235F764A00A9BDC7 /* main.m */; };
+		B0550855235F773400A9BDC7 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = B0550854235F773400A9BDC7 /* NetworkService.m */; };
+		B0550859235F783500A9BDC7 /* RateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0550858235F783500A9BDC7 /* RateModel.m */; };
+		B055085C235F83A600A9BDC7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B055085B235F83A600A9BDC7 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,12 @@
 		B0550848235F764A00A9BDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B055084A235F764A00A9BDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B055084B235F764A00A9BDC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0550853235F773400A9BDC7 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		B0550854235F773400A9BDC7 /* NetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		B0550857235F783500A9BDC7 /* RateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RateModel.h; sourceTree = "<group>"; };
+		B0550858235F783500A9BDC7 /* RateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RateModel.m; sourceTree = "<group>"; };
+		B055085A235F83A600A9BDC7 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B055085B235F83A600A9BDC7 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +70,38 @@
 			children = (
 				B055083C235F764800A9BDC7 /* AppDelegate.h */,
 				B055083D235F764800A9BDC7 /* AppDelegate.m */,
+				B0550852235F771400A9BDC7 /* Services */,
 				B055083F235F764800A9BDC7 /* SceneDelegate.h */,
 				B0550840235F764800A9BDC7 /* SceneDelegate.m */,
 				B0550842235F764800A9BDC7 /* ViewController.h */,
 				B0550843235F764800A9BDC7 /* ViewController.m */,
+				B055085A235F83A600A9BDC7 /* DetailViewController.h */,
+				B055085B235F83A600A9BDC7 /* DetailViewController.m */,
 				B0550845235F764A00A9BDC7 /* Assets.xcassets */,
 				B0550847235F764A00A9BDC7 /* LaunchScreen.storyboard */,
 				B055084A235F764A00A9BDC7 /* Info.plist */,
 				B055084B235F764A00A9BDC7 /* main.m */,
 			);
 			path = Lesson03;
+			sourceTree = "<group>";
+		};
+		B0550852235F771400A9BDC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B0550856235F782100A9BDC7 /* Models */,
+				B0550853235F773400A9BDC7 /* NetworkService.h */,
+				B0550854235F773400A9BDC7 /* NetworkService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B0550856235F782100A9BDC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0550857235F783500A9BDC7 /* RateModel.h */,
+				B0550858235F783500A9BDC7 /* RateModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,10 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B055085C235F83A600A9BDC7 /* DetailViewController.m in Sources */,
 				B0550844235F764800A9BDC7 /* ViewController.m in Sources */,
 				B055083E235F764800A9BDC7 /* AppDelegate.m in Sources */,
 				B055084C235F764A00A9BDC7 /* main.m in Sources */,
 				B0550841235F764800A9BDC7 /* SceneDelegate.m in Sources */,
+				B0550855235F773400A9BDC7 /* NetworkService.m in Sources */,
+				B0550859235F783500A9BDC7 /* RateModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

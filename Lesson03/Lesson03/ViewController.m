@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "NetworkService.h"
+#import "RateModel.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) NSMutableArray *rates;
 
 @end
 
@@ -16,9 +21,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.blueColor; // TODO: Proof we have loaded
+    
+    self.view.backgroundColor = UIColor.whiteColor;
+    [self setTitle:@"Курсы валют"];
+    [self.navigationController.navigationBar setPrefersLargeTitles:YES];
+    
+    self.rates = [NSMutableArray new];
+    
+    [[NetworkService sharedInstance] getAllRates:^(NSArray *rates) {
+        [self.rates addObjectsFromArray:rates];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.rates count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                      reuseIdentifier:@"Cell"];
+    }
+    RateModel *model = [self.rates objectAtIndex:indexPath.row];
+    cell.textLabel.text = [model rateName];
+    cell.detailTextLabel.text = [[model rateValue] stringValue];
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    RateModel *model = [self.rates objectAtIndex:indexPath.row];
+    DetailViewController *vc = [[DetailViewController alloc] initWithModel:model];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+//    [vc setModel:model];
+//    [self.navigationController pushViewController:vc animated:true];
+    [self presentViewController:nav animated:true completion:nil];
+}
 
 @end
