@@ -1,5 +1,6 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "GeocoderVC.h"
 
 @interface SceneDelegate ()
 
@@ -15,8 +16,10 @@
     UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     self.window = window;
 
-    ViewController *viewController = [[ViewController alloc] init];
-    window.rootViewController = viewController;
+//    ViewController *viewController = [[ViewController alloc] init];
+    GeocoderVC *vc = [[GeocoderVC alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    window.rootViewController = nav;
     [window makeKeyAndVisible];
 }
 
