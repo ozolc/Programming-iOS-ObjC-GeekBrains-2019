@@ -13,6 +13,7 @@
 		B053A11823622387003AD223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B053A11723622387003AD223 /* Assets.xcassets */; };
 		B053A11B23622387003AD223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B053A11923622387003AD223 /* LaunchScreen.storyboard */; };
 		B053A11E23622387003AD223 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B053A11D23622387003AD223 /* main.m */; };
+		B053A126236227FF003AD223 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B053A125236227FF003AD223 /* TabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		B053A11A23622387003AD223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B053A11C23622387003AD223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B053A11D23622387003AD223 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B053A124236227FF003AD223 /* TabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
+		B053A125236227FF003AD223 /* TabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				B053A11223622386003AD223 /* SceneDelegate.m */,
 				B053A11423622386003AD223 /* ViewController.h */,
 				B053A11523622386003AD223 /* ViewController.m */,
+				B053A124236227FF003AD223 /* TabBar.h */,
+				B053A125236227FF003AD223 /* TabBar.m */,
 				B053A11723622387003AD223 /* Assets.xcassets */,
 				B053A11923622387003AD223 /* LaunchScreen.storyboard */,
 				B053A11C23622387003AD223 /* Info.plist */,
@@ -142,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B053A126236227FF003AD223 /* TabBar.m in Sources */,
 				B053A11623622386003AD223 /* ViewController.m in Sources */,
 				B053A11023622386003AD223 /* AppDelegate.m in Sources */,
 				B053A11E23622387003AD223 /* main.m in Sources */,
