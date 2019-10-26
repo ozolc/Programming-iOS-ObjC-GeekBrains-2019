@@ -13,6 +13,12 @@
 		B07232F623647AE6002D39D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07232F523647AE6002D39D4 /* Assets.xcassets */; };
 		B07232F923647AE6002D39D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07232F723647AE6002D39D4 /* LaunchScreen.storyboard */; };
 		B07232FC23647AE6002D39D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B07232FB23647AE6002D39D4 /* main.m */; };
+		B0723304236483CA002D39D4 /* HumanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0723303236483CA002D39D4 /* HumanTableViewController.m */; };
+		B0723307236485FC002D39D4 /* MakeHumanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0723306236485FC002D39D4 /* MakeHumanVC.m */; };
+		B0D500BD2364ACE700621392 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D500BC2364ACE700621392 /* CoreDataService.m */; };
+		B0D500C82364AF5A00621392 /* Lesson6.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0D500C62364AF5A00621392 /* Lesson6.xcdatamodeld */; };
+		B0D500D22364B04D00621392 /* Humans+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D500D02364B04D00621392 /* Humans+CoreDataClass.m */; };
+		B0D500D92364B60900621392 /* Humans+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D500D82364B60900621392 /* Humans+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,18 @@
 		B07232F823647AE6002D39D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B07232FA23647AE6002D39D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B07232FB23647AE6002D39D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0723302236483CA002D39D4 /* HumanTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumanTableViewController.h; sourceTree = "<group>"; };
+		B0723303236483CA002D39D4 /* HumanTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanTableViewController.m; sourceTree = "<group>"; };
+		B0723305236485FC002D39D4 /* MakeHumanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeHumanVC.h; sourceTree = "<group>"; };
+		B0723306236485FC002D39D4 /* MakeHumanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeHumanVC.m; sourceTree = "<group>"; };
+		B0D500BB2364ACE700621392 /* CoreDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
+		B0D500BC2364ACE700621392 /* CoreDataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
+		B0D500C72364AF5A00621392 /* Lesson6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lesson6.xcdatamodel; sourceTree = "<group>"; };
+		B0D500C92364B01A00621392 /* Lesson06-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lesson06-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0D500CF2364B04D00621392 /* Humans+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Humans+CoreDataClass.h"; sourceTree = SOURCE_ROOT; };
+		B0D500D02364B04D00621392 /* Humans+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Humans+CoreDataClass.m"; sourceTree = SOURCE_ROOT; };
+		B0D500D72364B60900621392 /* Humans+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Humans+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		B0D500D82364B60900621392 /* Humans+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Humans+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +83,40 @@
 				B07232F023647AE5002D39D4 /* SceneDelegate.m */,
 				B07232F223647AE5002D39D4 /* ViewController.h */,
 				B07232F323647AE5002D39D4 /* ViewController.m */,
+				B0D500BA2364ACC500621392 /* Services */,
+				B0723302236483CA002D39D4 /* HumanTableViewController.h */,
+				B0723303236483CA002D39D4 /* HumanTableViewController.m */,
+				B0723305236485FC002D39D4 /* MakeHumanVC.h */,
+				B0723306236485FC002D39D4 /* MakeHumanVC.m */,
 				B07232F523647AE6002D39D4 /* Assets.xcassets */,
 				B07232F723647AE6002D39D4 /* LaunchScreen.storyboard */,
 				B07232FA23647AE6002D39D4 /* Info.plist */,
 				B07232FB23647AE6002D39D4 /* main.m */,
 			);
 			path = Lesson06;
+			sourceTree = "<group>";
+		};
+		B0D500BA2364ACC500621392 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B0D500BE2364ACF300621392 /* Models */,
+				B0D500BB2364ACE700621392 /* CoreDataService.h */,
+				B0D500BC2364ACE700621392 /* CoreDataService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B0D500BE2364ACF300621392 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0D500D72364B60900621392 /* Humans+CoreDataProperties.h */,
+				B0D500D82364B60900621392 /* Humans+CoreDataProperties.m */,
+				B0D500CF2364B04D00621392 /* Humans+CoreDataClass.h */,
+				B0D500D02364B04D00621392 /* Humans+CoreDataClass.m */,
+				B0D500C62364AF5A00621392 /* Lesson6.xcdatamodeld */,
+				B0D500C92364B01A00621392 /* Lesson06-Bridging-Header.h */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +150,7 @@
 				TargetAttributes = {
 					B07232E823647AE5002D39D4 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -143,8 +190,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07232F423647AE5002D39D4 /* ViewController.m in Sources */,
+				B0D500D92364B60900621392 /* Humans+CoreDataProperties.m in Sources */,
+				B0723304236483CA002D39D4 /* HumanTableViewController.m in Sources */,
+				B0723307236485FC002D39D4 /* MakeHumanVC.m in Sources */,
 				B07232EE23647AE5002D39D4 /* AppDelegate.m in Sources */,
 				B07232FC23647AE6002D39D4 /* main.m in Sources */,
+				B0D500BD2364ACE700621392 /* CoreDataService.m in Sources */,
+				B0D500D22364B04D00621392 /* Humans+CoreDataClass.m in Sources */,
+				B0D500C82364AF5A00621392 /* Lesson6.xcdatamodeld in Sources */,
 				B07232F123647AE5002D39D4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Lesson06/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -285,6 +339,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ozolc.Lesson06;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lesson06/Services/Models/Lesson06-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -293,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Lesson06/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,6 +359,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ozolc.Lesson06;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lesson06/Services/Models/Lesson06-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -327,6 +387,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0D500C62364AF5A00621392 /* Lesson6.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0D500C72364AF5A00621392 /* Lesson6.xcdatamodel */,
+			);
+			currentVersion = B0D500C72364AF5A00621392 /* Lesson6.xcdatamodel */;
+			path = Lesson6.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B07232E123647AE5002D39D4 /* Project object */;
 }

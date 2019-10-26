@@ -1,5 +1,6 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "HumanTableViewController.h"
 
 @interface SceneDelegate ()
 
@@ -15,9 +16,12 @@
     UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     self.window = window;
 
-    ViewController *viewController = [[ViewController alloc] init];
-    window.rootViewController = viewController;
+    HumanTableViewController *vc = [[HumanTableViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.navigationController.navigationBar.prefersLargeTitles = YES;
+    window.rootViewController = nav;
     [window makeKeyAndVisible];
+    
 }
 
 
