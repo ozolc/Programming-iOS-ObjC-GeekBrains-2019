@@ -8,6 +8,7 @@
 
 #import "TabBar.h"
 #import "ViewController.h"
+#import "CollectionVC.h"
 
 @interface TabBar ()
 
@@ -22,13 +23,13 @@
         ViewController *first = [[ViewController alloc] init];
         first.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Picker" image:[UIImage imageNamed: @"collection"] tag:0];
         
-        UIViewController *second = [[UIViewController alloc] init];
-        second.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Second" image:[UIImage imageNamed: @"image"] tag:0];
+        CollectionVC *second = [[CollectionVC alloc] init];
+        second.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Collection" image:[UIImage imageNamed: @"image"] tag:0];
         [second.view setBackgroundColor:[UIColor greenColor]];
         
         self.viewControllers = @[first, second];
         [self.tabBar setTintColor:[UIColor blueColor]];
-        [self setSelectedIndex:0];
+        [self setSelectedIndex:1];
         return self;
     }
     return self;

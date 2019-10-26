@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0453F7A23642406000BBC80 /* CollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0453F7923642406000BBC80 /* CollectionVC.m */; };
 		B053A11023622386003AD223 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B053A10F23622386003AD223 /* AppDelegate.m */; };
 		B053A11323622386003AD223 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B053A11223622386003AD223 /* SceneDelegate.m */; };
 		B053A11623622386003AD223 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B053A11523622386003AD223 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0453F7823642406000BBC80 /* CollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionVC.h; sourceTree = "<group>"; };
+		B0453F7923642406000BBC80 /* CollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionVC.m; sourceTree = "<group>"; };
 		B053A10B23622386003AD223 /* Lesson05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B053A10E23622386003AD223 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B053A10F23622386003AD223 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				B053A11223622386003AD223 /* SceneDelegate.m */,
 				B053A11423622386003AD223 /* ViewController.h */,
 				B053A11523622386003AD223 /* ViewController.m */,
+				B0453F7823642406000BBC80 /* CollectionVC.h */,
+				B0453F7923642406000BBC80 /* CollectionVC.m */,
 				B053A124236227FF003AD223 /* TabBar.h */,
 				B053A125236227FF003AD223 /* TabBar.m */,
 				B053A11723622387003AD223 /* Assets.xcassets */,
@@ -149,6 +154,7 @@
 			files = (
 				B053A126236227FF003AD223 /* TabBar.m in Sources */,
 				B053A11623622386003AD223 /* ViewController.m in Sources */,
+				B0453F7A23642406000BBC80 /* CollectionVC.m in Sources */,
 				B053A11023622386003AD223 /* AppDelegate.m in Sources */,
 				B053A11E23622387003AD223 /* main.m in Sources */,
 				B053A11323622386003AD223 /* SceneDelegate.m in Sources */,
