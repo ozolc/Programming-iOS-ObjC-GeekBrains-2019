@@ -1,5 +1,6 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "NotificationService.h"
 
 @interface SceneDelegate ()
 
@@ -18,6 +19,8 @@
     ViewController *viewController = [[ViewController alloc] init];
     window.rootViewController = viewController;
     [window makeKeyAndVisible];
+    
+    [[NotificationService sharedInstance] registerService];
 }
 
 

@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0033A19236589F300DB828C /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = B0033A18236589F300DB828C /* NotificationService.m */; };
 		B04524592365637D00D59D80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04524582365637D00D59D80 /* AppDelegate.m */; };
 		B045245C2365637D00D59D80 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B045245B2365637D00D59D80 /* SceneDelegate.m */; };
 		B045245F2365637D00D59D80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B045245E2365637D00D59D80 /* ViewController.m */; };
 		B04524612365637E00D59D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04524602365637E00D59D80 /* Assets.xcassets */; };
 		B04524642365637E00D59D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04524622365637E00D59D80 /* LaunchScreen.storyboard */; };
 		B04524672365637E00D59D80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04524662365637E00D59D80 /* main.m */; };
+		B045246F236567BF00D59D80 /* ContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B045246E236567BF00D59D80 /* ContentVC.m */; };
+		B045247223656B3300D59D80 /* PageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B045247123656B3300D59D80 /* PageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0033A17236589F300DB828C /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		B0033A18236589F300DB828C /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		B04524542365637D00D59D80 /* Lesson07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson07.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04524572365637D00D59D80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B04524582365637D00D59D80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,6 +32,10 @@
 		B04524632365637E00D59D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B04524652365637E00D59D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B04524662365637E00D59D80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B045246D236567BF00D59D80 /* ContentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentVC.h; sourceTree = "<group>"; };
+		B045246E236567BF00D59D80 /* ContentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentVC.m; sourceTree = "<group>"; };
+		B045247023656B3300D59D80 /* PageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageVC.h; sourceTree = "<group>"; };
+		B045247123656B3300D59D80 /* PageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +70,16 @@
 			children = (
 				B04524572365637D00D59D80 /* AppDelegate.h */,
 				B04524582365637D00D59D80 /* AppDelegate.m */,
+				B0033A17236589F300DB828C /* NotificationService.h */,
+				B0033A18236589F300DB828C /* NotificationService.m */,
 				B045245A2365637D00D59D80 /* SceneDelegate.h */,
 				B045245B2365637D00D59D80 /* SceneDelegate.m */,
 				B045245D2365637D00D59D80 /* ViewController.h */,
 				B045245E2365637D00D59D80 /* ViewController.m */,
+				B045246D236567BF00D59D80 /* ContentVC.h */,
+				B045246E236567BF00D59D80 /* ContentVC.m */,
+				B045247023656B3300D59D80 /* PageVC.h */,
+				B045247123656B3300D59D80 /* PageVC.m */,
 				B04524602365637E00D59D80 /* Assets.xcassets */,
 				B04524622365637E00D59D80 /* LaunchScreen.storyboard */,
 				B04524652365637E00D59D80 /* Info.plist */,
@@ -143,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B045245F2365637D00D59D80 /* ViewController.m in Sources */,
+				B045246F236567BF00D59D80 /* ContentVC.m in Sources */,
 				B04524592365637D00D59D80 /* AppDelegate.m in Sources */,
+				B045247223656B3300D59D80 /* PageVC.m in Sources */,
 				B04524672365637E00D59D80 /* main.m in Sources */,
+				B0033A19236589F300DB828C /* NotificationService.m in Sources */,
 				B045245C2365637D00D59D80 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RXJ69EWCMT;
 				INFOPLIST_FILE = Lesson07/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RXJ69EWCMT;
 				INFOPLIST_FILE = Lesson07/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
